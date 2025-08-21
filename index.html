@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria's Kusina</title>
+    <!-- Favicon -->
+    <link rel="icon" href="https://placehold.co/32x32/000000/FFFFFF?text=MK" type="image/x-icon">
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <img src="https://placehold.co/40x40/7a5440/FFFFFF?text=MK" alt="Maria's Kusina Logo" class="rounded-full">
+                <span class="text-xl md:text-2xl font-semibold text-brown">Maria's Kusina</span>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="#" class="text-lg text-gray-600 hover:text-brown transition-colors">Home</a>
+                <a href="#" class="text-lg text-gray-600 hover:text-brown transition-colors">Menu</a>
+                <a href="#" class="text-lg text-gray-600 hover:text-brown transition-colors">About</a>
+                <a href="#" class="text-lg text-gray-600 hover:text-brown transition-colors">Catering</a>
+                <a href="#" class="text-lg text-gray-600 hover:text-brown transition-colors">Contact</a>
+                <button class="bg-brown-500 text-white px-6 py-2 rounded-full font-medium hover:bg-brown-600 transition-colors">Order Now</button>
+            </div>
+
+            <!-- Mobile Navigation (hidden for simplicity but a full site would have it) -->
+            <div class="lg:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-[60vh] md:h-[80vh] flex items-center justify-center text-white">
+        <!-- Background Image/Overlay -->
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('img/header.jpg');">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative container mx-auto px-6 text-center md:text-left">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight drop-shadow-lg">
+                    Experience Authentic Filipino Flavors
+                </h1>
+                <p class="mt-4 text-lg md:text-xl font-light drop-shadow-md">
+                    Taste the heart of the Philippines in Los Angeles at Maria's Kusina
+                </p>
+                <button id="see-menu-button" class="mt-8 bg-white text-brown px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-gray-100 transition-colors">
+                    See Our Menu
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-gray-900">
+                Welcome to Maria's Kusina
+            </h2>
+            <p class="text-lg md:text-xl max-w-4xl mx-auto text-gray-600 leading-relaxed">
+                Bringing the flavors of home to Los Angeles, Maria's Kusina is your destination for classic Filipino comfort food. From sizzling sisig to savory pancit and crispy lumpia, every dish is made with love and tradition.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1: Authentic Dishes -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <img src="img/lechon.jpg" alt="Authentic Filipino Dishes" class="w-full h-48 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Authentic Dishes</h3>
+                        <p class="text-gray-600 mb-4">Explore our wide array of classic Filipino favorites.</p>
+                        <button id="view-menu-button" class="bg-brown-500 text-white px-6 py-2 rounded-full font-medium hover:bg-brown-600 transition-colors">
+                            View Menu
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 2: Family-Style Dining -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <img src="img/pancit.jpg" alt="Family-Style Dining" class="w-full h-48 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Family-Style Dining</h3>
+                        <p class="text-gray-600 mb-4">A perfect spot for intimate gatherings and special occasions.</p>
+                        <button class="bg-brown-500 text-white px-6 py-2 rounded-full font-medium hover:bg-brown-600 transition-colors">
+                            Reserve a Table
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 3: Catering Services -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <img src="img/cater.jpg" alt="Catering Services" class="w-full h-48 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Catering Services</h3>
+                        <p class="text-gray-600 mb-4">Let us bring the taste of Maria's Kusina to your next event.</p>
+                        <button class="bg-brown-500 text-white px-6 py-2 rounded-full font-medium hover:bg-brown-600 transition-colors">
+                            Catering Info
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brown-500 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl md:text-3xl font-extrabold mb-4">Taste tradition. Share memories. Celebrate together.</h2>
+            <div class="flex flex-col md:flex-row justify-between items-center mt-8">
+                <!-- Nav Links -->
+                <div class="flex flex-wrap justify-center md:justify-start space-x-4 mb-4 md:mb-0">
+                </div>
+
+                <!-- Address -->
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <p class="font-light">6901 La Palma Buena Park, CA 90620</p>
+                </div>
+
+                <!-- Social Media Icons (placeholders) -->
+                <div class="flex justify-center md:justify-end space-x-4">
+                    <a href="#" aria-label="Facebook" class="hover:text-gray-200 transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.07 10.98a.93.93 0 0 0-.91-.77H12v3.75h2.15l-.29 1.48h-1.86v4.61h-2.14v-4.61H7.83v-1.48h2.03V10.2c0-1.74 1.04-2.69 2.61-2.69 1.15 0 2.12.08 2.4.12v1.27l-.02.01z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Instagram" class="hover:text-gray-200 transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07c3.252.148 4.771 1.691 4.919 4.919.058 1.265.07 1.645.07 4.85s-.012 3.584-.07 4.85c-.148 3.228-1.667 4.747-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.251-.148-4.77-1.691-4.919-4.919-.058-1.265-.07-1.645-.07-4.85s.012-3.584.07-4.85c.149-3.227 1.668-4.746 4.919-4.919 1.266-.058 1.644-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.204-6.78 2.625-6.984 6.984-.058 1.28-.072 1.688-.072 4.947s.014 3.668.072 4.947c.204 4.359 2.625 6.78 6.984 6.984 1.28.058 1.688.072 4.947.072s3.668-.014 4.947-.072c4.354-.204 6.78-2.626 6.984-6.984.058-1.279.072-1.688.072-4.947s-.014-3.668-.072-4.947c-.204-4.357-2.626-6.78-6.984-6.984-1.279-.058-1.688-.072-4.947-.072zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.059-11.758c-.534 0-1.2-.534-1.2-1.2s.536-1.2 1.2-1.2c.535 0 1.2.535 1.2 1.2s-.535 1.2-1.2 1.2z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Menu Modal -->
+    <div id="menu-modal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden">
+        <div class="relative bg-white p-4 rounded-lg shadow-lg max-w-3xl max-h-[90vh] overflow-auto">
+            <button id="close-menu-modal" class="absolute top-2 right-2 text-gray-800 text-3xl font-bold leading-none hover:text-gray-600">&times;</button>
+            <img src="img/menu.jpg" alt="Our Menu" class="w-full h-auto rounded-md">
+        </div>
+    </div>
+
+    <!-- Subtle JS for smooth scrolling and hover effects -->
+    <script src="js/script.js"></script>
+</body>
+</html>

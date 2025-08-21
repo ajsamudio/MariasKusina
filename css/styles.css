@@ -1,0 +1,24 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+.text-brown {
+    color: #7a5440;
+}
+.bg-brown-500 {
+    background-color: #7a5440;
+}
+
+.bg-brown-600 {
+    background-color: #6a493a;
+}
+
+.border-brown-500 {
+    border-color: #7a5440;
+}
+
+/* Ensure modal is visible when 'hidden' class is removed */
+#menu-modal:not(.hidden) {
+    display: flex;
+}
