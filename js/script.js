@@ -1,52 +1,42 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
+// Sticky Navbar
+const navbar = document.querySelector('.navbar');
 
-    // Card hover effect (already handled by Tailwind, but a good place for more complex JS)
-    const cards = document.querySelectorAll('.transform');
-    cards.forEach(card => {
-        card.addEventListener('mouseenter', () => {
-            card.style.transform = 'scale(1.03)';
-        });
-        card.addEventListener('mouseleave', () => {
-            card.style.transform = 'scale(1)';
-        });
-    });
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
 
-    // Menu Modal functionality
-    const seeMenuButton = document.getElementById('see-menu-button');
-    const viewMenuButton = document.getElementById('view-menu-button');
-    const menuModal = document.getElementById('menu-modal');
-    const closeMenuModal = document.getElementById('close-menu-modal');
-
-    if (menuModal && closeMenuModal) {
-        if (seeMenuButton) {
-            seeMenuButton.addEventListener('click', () => {
-                menuModal.classList.remove('hidden');
-            });
+// Subtle fade-in on scroll for sections
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+        } else {
+            // Optional: remove the class if you want the animation to re-run on scroll
+            // entry.target.classList.remove('fade-in');
         }
+    });
+}, { threshold: 0.1 }); // The animation triggers when 10% of the element is visible
 
-        if (viewMenuButton) {
-            viewMenuButton.addEventListener('click', () => {
-                menuModal.classList.remove('hidden');
-            });
-        }
+document.querySelectorAll('section, .cta-banner, .menu-item').forEach(element => {
+    element.classList.add('hidden-fade');
+    observer.observe(element);
+});
 
-        closeMenuModal.addEventListener('click', () => {
-            menuModal.classList.add('hidden');
-        });
+// Hamburger menu functionality
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const navLinks = document.querySelector('.nav-links');
 
-        menuModal.addEventListener('click', (e) => {
-            if (e.target === menuModal) {
-                menuModal.classList.add('hidden');
-            }
-        });
+hamburgerMenu.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+// Deactivate hamburger menu on scroll
+window.addEventListener('scroll', () => {
+    if (navLinks.classList.contains('active')) {
+        navLinks.classList.remove('active');
     }
 });
