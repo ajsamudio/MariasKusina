@@ -131,6 +131,17 @@ section {
     padding-top: 60px; /* Space for the sticky navbar */
 }
 
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.275); /* Semi-transparent white overlay to lighten the background image */
+    z-index: 1;
+}
+
 .navbar {
     position: fixed;
     top: 0;
@@ -200,19 +211,26 @@ section {
 .hero-content {
     text-align: center;
     max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent dark background */
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 0 auto; /* Center the content block */
+    z-index: 2; /* Ensure content is above the white overlay */
 }
 
 .hero-content h1 {
     font-size: 4rem;
     margin-bottom: 1rem;
-    color: yellow;
-    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    background-image: linear-gradient(to bottom, #F8F8E0, #D4C470);
+    -webkit-background-clip: text; /* For Webkit browsers */
+    background-clip: text;
+    color: transparent; /* Make text transparent to show gradient */
 }
 
 .hero-content p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    color: yellow;
+    color: #F0E68C ;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
@@ -268,6 +286,7 @@ section {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    object-position: 0% 40%; /* Added for explicit centering and future adjustments */
     border-radius: 8px;
     margin-bottom: 1rem;
 }
