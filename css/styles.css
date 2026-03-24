@@ -1,8 +1,11 @@
 /* General & Typography */
 :root {
-    --primary-color: #8B4513; /* A warm, earthy brown */
-    --secondary-color: #A0522D; /* A slightly darker brown */
-    --background-light: #F5F5DC; /* A creamy, off-white */
+    --primary-color: #8B4513;
+    /* A warm, earthy brown */
+    --secondary-color: #A0522D;
+    /* A slightly darker brown */
+    --background-light: #F5F5DC;
+    /* A creamy, off-white */
     --text-dark: #333;
     --text-light: #fff;
     --spicy-red: #A52A2A;
@@ -22,7 +25,10 @@ body {
     background-color: var(--background-light);
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     text-align: center;
@@ -133,7 +139,8 @@ section {
 /* Header & Navbar (Sticky behavior via JS) */
 .hero-section {
     height: 100vh;
-    background-image: url('../img/header.jpg'); /* Use a placeholder or provided image */
+    background-image: url('../img/header.jpg');
+    /* Use a placeholder or provided image */
     background-size: cover;
     background-position: center;
     display: flex;
@@ -143,7 +150,8 @@ section {
     color: var(--text-light);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     position: relative;
-    padding-top: 60px; /* Space for the sticky navbar */
+    padding-top: 60px;
+    /* Space for the sticky navbar */
 }
 
 .hero-section::before {
@@ -153,7 +161,8 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay — improves text contrast against the hero image */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Dark overlay — improves text contrast against the hero image */
     z-index: 1;
 }
 
@@ -178,7 +187,8 @@ section {
     color: var(--text-dark);
 }
 
-.navbar.scrolled .nav-links a, .navbar.scrolled .contact-info {
+.navbar.scrolled .nav-links a,
+.navbar.scrolled .contact-info {
     color: var(--text-dark);
 }
 
@@ -229,8 +239,10 @@ section {
     /* background-color: rgba(0, 0, 0, 0.4);  */
     padding: 2rem;
     border-radius: 10px;
-    margin: 0 auto; /* Center the content block */
-    z-index: 2; /* Ensure content is above the white overlay */
+    margin: 0 auto;
+    /* Center the content block */
+    z-index: 2;
+    /* Ensure content is above the white overlay */
 }
 
 .hero-content h1 {
@@ -263,8 +275,10 @@ section {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 0.5rem 1rem;
     border-radius: 20px;
-    width: fit-content; /* Adjust width to fit content */
-    margin: 0 auto; /* Center the element */
+    width: fit-content;
+    /* Adjust width to fit content */
+    margin: 0 auto;
+    /* Center the element */
 }
 
 /* Welcome Section */
@@ -301,7 +315,8 @@ section {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    object-position: 0% 40%; /* Added for explicit centering and future adjustments */
+    object-position: 0% 40%;
+    /* Added for explicit centering and future adjustments */
     border-radius: 8px;
     margin-bottom: 1rem;
 }
@@ -343,10 +358,20 @@ section {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .menu-item:hover {
     transform: translateY(-5px);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
 }
 
 .menu-item h4 {
@@ -368,7 +393,8 @@ section {
 
 .badge.popular {
     background-color: var(--popular-yellow);
-    color: #333; /* Dark text on yellow — passes WCAG AA contrast (was white: fail) */
+    color: #333;
+    /* Dark text on yellow — passes WCAG AA contrast (was white: fail) */
 }
 
 .badge.spicy {
@@ -389,11 +415,12 @@ section {
 
 .add-to-order {
     display: block;
-    margin-top: 0.5rem;
+    margin-top: auto;
     color: var(--primary-color);
     text-decoration: none;
     font-weight: 600;
     transition: transform 0.2s ease;
+    padding-top: 0.5rem;
 }
 
 .add-to-order:hover {
@@ -448,7 +475,8 @@ section {
     font-weight: bold;
 }
 
-.footer-col p, .footer-col li {
+.footer-col p,
+.footer-col li {
     margin-bottom: 0.5rem;
 }
 
@@ -514,7 +542,8 @@ section {
 
 /* Hamburger Menu */
 .hamburger-menu {
-    display: none; /* Hidden by default, shown on mobile */
+    display: none;
+    /* Hidden by default, shown on mobile */
     flex-direction: column;
     cursor: pointer;
     padding: 10px;
@@ -546,19 +575,22 @@ section {
     }
 
     .nav-links {
-        display: none; /* Hide by default on mobile */
+        display: none;
+        /* Hide by default on mobile */
         flex-direction: column;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.8);
         position: absolute;
-        top: 60px; /* Below the navbar */
+        top: 60px;
+        /* Below the navbar */
         left: 0;
         padding: 1rem 0;
         text-align: center;
     }
 
     .nav-links.active {
-        display: flex; /* Show when active */
+        display: flex;
+        /* Show when active */
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     }
@@ -572,15 +604,18 @@ section {
     }
 
     .navbar.scrolled .nav-links.active li a {
-        color: var(--text-light); /* Ensure white text when scrolled and active */
+        color: var(--text-light);
+        /* Ensure white text when scrolled and active */
     }
 
     .contact-info {
-        display: none; /* Hide by default on mobile */
+        display: none;
+        /* Hide by default on mobile */
     }
 
     .hamburger-menu {
-        display: flex; /* Show hamburger on mobile */
+        display: flex;
+        /* Show hamburger on mobile */
     }
 
     .hero-content {
@@ -591,7 +626,9 @@ section {
         font-size: 2.5rem;
     }
 
-    .card-container, .cta-buttons, .family-feast-details {
+    .card-container,
+    .cta-buttons,
+    .family-feast-details {
         flex-direction: column;
     }
 
@@ -613,41 +650,47 @@ section {
     transform: translateY(0);
 }
 
-/* ===================== About Section ===================== */
-.about-section {
-    background-color: #fff;
-    padding: 5rem 2rem;
-}
-
-.about-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    max-width: 1100px;
-    margin: 3rem auto 0;
+/* ===================== Menu Full Image ===================== */
+.menu-image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    margin: 2rem auto;
+    padding: 1rem 0;
 }
 
-.about-text h3 {
-    text-align: left;
-    font-size: 1.6rem;
+.menu-link-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: zoom-in;
+    margin: 1rem 0;
+}
+
+.rotated-menu {
+    max-width: 100%;
+    max-height: 800px;
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-link-wrapper:hover .rotated-menu {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.zoom-hint {
     color: var(--primary-color);
-    margin-bottom: 1.5rem;
-}
-
-.about-text p {
-    color: #555;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    line-height: 1.8;
-}
-
-.about-image img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-top: 1rem;
+    text-align: center;
+    pointer-events: none;
 }
 
 /* ===================== Catering Section ===================== */
@@ -719,20 +762,4 @@ section {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-}
-
-/* ===================== Responsive — new sections ===================== */
-@media (max-width: 768px) {
-    .about-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .about-image {
-        order: -1;
-    }
-
-    .about-image img {
-        height: 250px;
-    }
 }
