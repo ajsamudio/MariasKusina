@@ -1,13 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(powershell -Command \"Get-Content ''C:\\\\Users\\\\Ajayy\\\\OneDrive\\\\Documents\\\\WebCode\\\\MariasKusina\\\\index.html'' | Select-Object -First 15\")",
-      "Bash(powershell -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\Ajayy\\\\OneDrive\\\\Documents\\\\WebCode\\\\MariasKusina\\\\inspect.ps1\")",
-      "Bash(powershell -Command \":*)",
-      "Bash(powershell -Command \"Get-Item ''C:\\\\Users\\\\Ajayy\\\\OneDrive\\\\Documents\\\\WebCode\\\\MariasKusina\\\\index.html'' | Select-Object Name, Length; Get-Item ''C:\\\\Users\\\\Ajayy\\\\OneDrive\\\\Documents\\\\WebCode\\\\MariasKusina\\\\css\\\\styles.css'' | Select-Object Name, Length\")",
-      "Bash(powershell -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\Ajayy\\\\OneDrive\\\\Documents\\\\WebCode\\\\MariasKusina\\\\verify.ps1\")",
-      "Bash(powershell -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\Ajayy\\\\OneDrive\\\\Documents\\\\WebCode\\\\MariasKusina\\\\verify2.ps1\")",
-      "Bash(powershell -Command \"Remove-Item ''C:\\\\Users\\\\Ajayy\\\\OneDrive\\\\Documents\\\\WebCode\\\\MariasKusina\\\\verify.ps1''; Remove-Item ''C:\\\\Users\\\\Ajayy\\\\OneDrive\\\\Documents\\\\WebCode\\\\MariasKusina\\\\verify2.ps1''; Write-Output ''Done''\")"
+      "Bash(git clone:*)",
+      "mcp__Claude_Preview__preview_start"
     ]
   }
 }

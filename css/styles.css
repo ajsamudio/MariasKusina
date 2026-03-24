@@ -315,8 +315,7 @@ section {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    object-position: 0% 40%;
-    /* Added for explicit centering and future adjustments */
+    object-position: center 40%;
     border-radius: 8px;
     margin-bottom: 1rem;
 }
@@ -366,12 +365,25 @@ section {
     transform: translateY(-5px);
 }
 
-.menu-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+.menu-img-wrap {
+    overflow: hidden;
     border-radius: 8px;
     margin-bottom: 1rem;
+    width: 100%;
+    height: 250px;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 35%;
+    display: block;
+    transition: transform 0.45s ease;
+}
+
+.menu-item:hover img {
+    transform: scale(1.07);
 }
 
 .menu-item h4 {
@@ -405,12 +417,15 @@ section {
     font-size: 0.9rem;
     color: #666;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .price {
     font-size: 1.2rem;
     font-weight: bold;
     color: var(--primary-color);
+    text-align: center;
+    display: block;
 }
 
 .add-to-order {
@@ -421,6 +436,7 @@ section {
     font-weight: 600;
     transition: transform 0.2s ease;
     padding-top: 0.5rem;
+    text-align: center;
 }
 
 .add-to-order:hover {
@@ -635,6 +651,32 @@ section {
     .copyright {
         flex-direction: column;
         gap: 0.5rem;
+    }
+
+    /* Menu grid: single column on mobile for clean stacking */
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Slightly taller image on mobile so the plate shows well */
+    .menu-img-wrap {
+        height: 220px;
+    }
+
+    /* Raise focal point a touch more on narrow screens */
+    .menu-item img {
+        object-position: center 30%;
+    }
+
+    /* Welcome cards: full width on mobile */
+    .card {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .card img {
+        height: 180px;
+        object-position: center 35%;
     }
 }
 
