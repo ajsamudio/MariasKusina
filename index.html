@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,16 +8,16 @@
 
     <!-- SEO -->
     <meta name="description"
-        content="Maria's Kusina serves authentic Filipino cuisine in Buena Park, CA. Family recipes since 1995 â€” adobo, lechon, pancit, lumpia, and full catering services.">
+        content="Maria's Kusina serves authentic Filipino cuisine in Buena Park, CA. Family recipes since 1995 — adobo, lechon, pancit, lumpia, and full catering services.">
 
-    <!-- Open Graph (controls how the site looks when shared on Facebook, iMessage, etc.) -->
+    <!-- Open Graph -->
     <meta property="og:title" content="Maria's Kusina - Authentic Filipino Cuisine">
     <meta property="og:description"
         content="Family recipes since 1995. Adobo, lechon, pancit, lumpia, and more in Buena Park, CA.">
     <meta property="og:image" content="img/header.jpg">
     <meta property="og:type" content="website">
 
-    <!-- Favicon â€” replace img/favicon.ico with your real favicon file -->
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
     <link rel="stylesheet" href="css/styles.css">
@@ -27,7 +27,6 @@
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-    <!-- Font Awesome 6.7.2 (fixed â€” was pointing to non-existent v7 with a corrupt hash) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck4w1K5lzdpayfpap6upws9vfg=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -37,21 +36,20 @@
 
 <body>
 
+    <!-- ═══════════════════ HERO ═══════════════════ -->
     <header id="home" class="hero-section">
         <nav class="navbar">
             <div class="logo">
-                <!-- Replace src with your logo file, e.g. img/logo.png -->
-                <span>Maria's Kusina</span>
+                <span>Maria's <span class="logo-accent">Kusina</span></span>
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#menu">Menu</a></li>
-                <li><a href="#catering">Catering</a></li>
+                <li><a href="#story">Our Story</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="contact-info">
                 <span>(714) 521-0108</span>
-                <a href="tel:7145210108" class="order-btn">Order Now</a>
             </div>
             <div class="hamburger-menu">
                 <div class="bar"></div>
@@ -61,64 +59,82 @@
         </nav>
 
         <div class="hero-content">
-            <h1>Experience Authentic Filipino Flavors</h1>
-            <p>Taste the heart of the Philippines in Los Angeles at Maria's Kusina. From sizzling sisig to savory pancit
-                and crispy lumpia, every dish is made with love and tradition.</p>
+            <span class="hero-tagline">Est. 1995 &bull; Buena Park, CA</span>
+            <h1>Experience Authentic<br><span class="highlight">Filipino Flavors</span></h1>
+            <p>From sizzling sisig to savory pancit and crispy lumpia, every dish is made with love, tradition, and the
+                heart of the Philippines.</p>
             <div class="hero-buttons">
-                <a href="#menu" class="btn btn-primary">See Our Menu</a>
-                <a href="#contact" class="btn btn-secondary">Find Us</a>
+                <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+                <a href="#story" class="btn btn-secondary">Our Story</a>
             </div>
             <div class="hero-location">
                 <i class="fas fa-map-marker-alt"></i>
-                <span>6901 La Palma Ave, Buena Park, CA 90620</span>
+                <span>6901 La Palma Ave, Buena Park</span>
+                <span class="separator"></span>
                 <i class="fas fa-clock"></i>
-                <span>Open Daily 11AM &ndash; 7:30PM</span>
+                <span>Daily 11AM &ndash; 7:30PM</span>
             </div>
         </div>
     </header>
 
+    <!-- ═══════════════════ PATTERN DIVIDER ═══════════════════ -->
+    <div class="pattern-divider"></div>
+
+    <!-- ═══════════════════ WELCOME ═══════════════════ -->
     <section class="welcome-section">
-        <h2>Welcome to Maria's Kusina</h2>
-        <p class="subtitle">Bringing the flavors of home to Los Angeles, Maria's Kusina is your destination for classic
-            Filipino comfort food. From sizzling sisig to savory pancit and crispy lumpia, every dish is made with love
-            and tradition.</p>
+        <span class="section-label">Welcome</span>
+        <h2>Taste of Home, <em>Far From Home</em></h2>
+        <p class="subtitle">Maria's Kusina is your destination for classic Filipino comfort food in the heart of
+            LA/OC. Every plate tells a story of family, tradition, and the rich flavors of the Philippines.</p>
         <div class="card-container">
             <div class="card">
-                <img src="img/pancit.jpg" alt="Authentic Dishes">
-                <h3>Authentic Dishes</h3>
-                <p>Traditional recipes passed down through generations, made with the finest ingredients and authentic
-                    Filipino spices.</p>
-                <a href="#menu" class="btn btn-card">View Menu</a>
+                <div class="card-img-wrap">
+                    <img src="img/pancit.jpg" alt="Authentic Filipino Dishes">
+                </div>
+                <div class="card-body">
+                    <h3>Authentic Dishes</h3>
+                    <p>Traditional recipes passed down through generations, made with the finest ingredients and
+                        authentic Filipino spices.</p>
+                    <a href="#menu" class="btn btn-card">View Menu</a>
+                </div>
             </div>
             <div class="card">
-                <img src="img/lechon.jpg" alt="Family-Style Dining">
-                <h3>Family-Style Dining</h3>
-                <p>Warm, welcoming atmosphere perfect for families and friends to share delicious meals and create
-                    lasting memories.</p>
-                <a href="#contact" class="btn btn-card">Reserve a Table</a>
+                <div class="card-img-wrap">
+                    <img src="img/lechon.jpg" alt="Family-Style Filipino Dining">
+                </div>
+                <div class="card-body">
+                    <h3>Family-Style Dining</h3>
+                    <p>A warm, welcoming atmosphere perfect for families and friends to share delicious meals and create
+                        lasting memories.</p>
+                    <a href="#contact" class="btn btn-card">Visit Us</a>
+                </div>
             </div>
             <div class="card">
-                <img src="img/cater.jpg" alt="Catering Services">
-                <h3>Catering Services</h3>
-                <p>Bring the flavors of the Philippines to your special events with our comprehensive catering services
-                    and party platters.</p>
-                <a href="#catering" class="btn btn-card">Catering Info</a>
+                <div class="card-img-wrap">
+                    <img src="img/cater.jpg" alt="Filipino Food for Every Occasion">
+                </div>
+                <div class="card-body">
+                    <h3>Made for Sharing</h3>
+                    <p>From party platters to family feasts, our dishes bring people together for every occasion and
+                        celebration.</p>
+                    <a href="#menu" class="btn btn-card">See the Menu</a>
+                </div>
             </div>
         </div>
         <div class="cta-banner">
             <h3>Taste tradition. Share memories. Celebrate together.</h3>
             <p>Join us for an authentic Filipino dining experience that brings families together.</p>
             <div class="cta-buttons">
-                <!-- Replace href="#" with your real online ordering URL (Toast, Square, etc.) -->
-                <a href="#" class="btn btn-primary">Order Online</a>
-                <a href="tel:7145210108" class="btn btn-secondary"><i class="fas fa-phone"></i> (714) 521-0108</a>
+                <a href="tel:7145210108" class="btn btn-primary"><i class="fas fa-phone"></i> (714) 521-0108</a>
             </div>
         </div>
     </section>
 
+    <!-- ═══════════════════ MENU ═══════════════════ -->
     <section id="menu" class="menu-section">
-        <h2>Our Authentic Menu</h2>
-        <p class="subtitle">Discover the rich flavors of traditional Filipino cuisine, crafted with authentic recipes
+        <span class="section-label">Our Menu</span>
+        <h2>Authentic Filipino Cuisine</h2>
+        <p class="subtitle">Discover the rich flavors of traditional Filipino cooking, crafted with authentic recipes
             and the freshest ingredients.</p>
 
         <div class="menu-image-container">
@@ -132,105 +148,133 @@
         <h3>Appetizers</h3>
         <div class="menu-grid">
             <div class="menu-item">
-                <h4>Lumpia Shanghai (12 Pcs)<span class="badge popular">Popular</span></h4>
-                <p>Crispy spring rolls filled with seasoned pork and vegetables, served with sweet and sour sauce.</p>
-                <span class="price">$8.75</span>
-                <!-- Replace href="#" with your online ordering link -->
-                <a href="#" class="add-to-order">Add to Order <i class="fas fa-arrow-right"></i></a>
+                <div class="menu-item-body">
+                    <h4>Lumpia Shanghai (12 Pcs)<span class="badge popular">Popular</span></h4>
+                    <p>Crispy spring rolls filled with seasoned pork and vegetables, served with sweet and sour sauce.
+                    </p>
+                    <span class="price">$8.75</span>
+                    <a href="#" class="add-to-order">Add to Order <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
             <div class="menu-item">
                 <div class="menu-img-wrap"><img src="img/PorkSisig.jpg" alt="Pork Sisig"></div>
-                <h4>Pork Sisig <span class="badge spicy">Spicy</span></h4>
-                <p>Sizzling pork belly and liver with onions, peppers, and calamansi.</p>
-                <span class="price">$13.25</span>
-                <a href="#" class="add-to-order">Add to Order <i class="fas fa-arrow-right"></i></a>
+                <div class="menu-item-body">
+                    <h4>Pork Sisig <span class="badge spicy">Spicy</span></h4>
+                    <p>Sizzling pork belly and liver with onions, peppers, and calamansi.</p>
+                    <span class="price">$13.25</span>
+                    <a href="#" class="add-to-order">Add to Order <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
             <div class="menu-item">
                 <div class="menu-img-wrap"><img src="img/TofuSisigMarie.jpg" alt="Tofu Sisig"></div>
-                <h4>Tofu Sisig <span class="badge spicy">Spicy</span></h4>
-                <p>A healthier sizzling twist of crispy tofu with onions, peppers, and calamansi.</p>
-                <span class="price">$13.25</span>
-                <a href="#" class="add-to-order">Add to Order <i class="fas fa-arrow-right"></i></a>
+                <div class="menu-item-body">
+                    <h4>Tofu Sisig <span class="badge spicy">Spicy</span></h4>
+                    <p>A healthier sizzling twist of crispy tofu with onions, peppers, and calamansi.</p>
+                    <span class="price">$13.25</span>
+                    <a href="#" class="add-to-order">Add to Order <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
             <div class="menu-item">
                 <div class="menu-img-wrap"><img src="img/ShrimpCharon.jpg" alt="Shrimp Chicharon"></div>
-                <h4>Shrimp Chicharon</h4>
-                <p>Crispy and savory deep-fried shrimp perfection.</p>
-                <span class="price">$10.99</span>
-                <a href="#" class="add-to-order">Add to Order <i class="fas fa-arrow-right"></i></a>
+                <div class="menu-item-body">
+                    <h4>Shrimp Chicharon</h4>
+                    <p>Crispy and savory deep-fried shrimp perfection.</p>
+                    <span class="price">$10.99</span>
+                    <a href="#" class="add-to-order">Add to Order <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
             <div class="menu-item">
                 <div class="menu-img-wrap"><img src="img/DeepFriendTofuMarie.jpg" alt="Deep Fried Tofu"></div>
-                <h4>Deep Fried Tofu</h4>
-                <p>Golden, crispy deep-fried tofu blocks served with dipping sauce.</p>
-                <span class="price">$8.99</span>
-                <a href="#" class="add-to-order">Add to Order <i class="fas fa-arrow-right"></i></a>
+                <div class="menu-item-body">
+                    <h4>Deep Fried Tofu</h4>
+                    <p>Golden, crispy deep-fried tofu blocks served with dipping sauce.</p>
+                    <span class="price">$8.99</span>
+                    <a href="#" class="add-to-order">Add to Order <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
             <div class="menu-item">
                 <div class="menu-img-wrap"><img src="img/NutsMarie.jpg" alt="Garlic Roasted Peanuts"></div>
-                <h4>Garlic Roasted Peanuts</h4>
-                <p>Classic savory Filipino appetizer.</p>
-                <span class="price">$5.99</span>
-                <a href="#" class="add-to-order">Add to Order <i class="fas fa-arrow-right"></i></a>
+                <div class="menu-item-body">
+                    <h4>Garlic Roasted Peanuts</h4>
+                    <p>Classic savory Filipino appetizer.</p>
+                    <span class="price">$5.99</span>
+                    <a href="#" class="add-to-order">Add to Order <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
         </div>
 
         <h3>Main Dishes</h3>
         <div class="menu-grid">
             <div class="menu-item">
-                <h4>Pancit Canton</h4>
-                <p>Stir-fried egg noodles with mixed vegetables, pork, and shrimp.</p>
-                <span class="price">$13.75</span>
-                <a href="#" class="add-to-order">Add to Order <i class="fas fa-arrow-right"></i></a>
+                <div class="menu-item-body">
+                    <h4>Pancit Canton</h4>
+                    <p>Stir-fried egg noodles with mixed vegetables, pork, and shrimp.</p>
+                    <span class="price">$13.75</span>
+                    <a href="#" class="add-to-order">Add to Order <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
             <div class="menu-item">
                 <div class="menu-img-wrap"><img src="img/LechonKawali.jpg" alt="Lechon Kawali"></div>
-                <h4>Lechon Kawali</h4>
-                <p>Crispy deep-fried pork belly served with liver sauce.</p>
-                <span class="price">$13.75</span>
-                <a href="#" class="add-to-order">Add to Order <i class="fas fa-arrow-right"></i></a>
+                <div class="menu-item-body">
+                    <h4>Lechon Kawali</h4>
+                    <p>Crispy deep-fried pork belly served with liver sauce.</p>
+                    <span class="price">$13.75</span>
+                    <a href="#" class="add-to-order">Add to Order <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
             <div class="menu-item">
                 <div class="menu-img-wrap"><img src="img/CrispyPata.jpg" alt="Crispy Pata"></div>
-                <h4>Crispy Pata <span class="badge popular">Popular</span></h4>
-                <p>Deep-fried pig trotters or knuckles served with a soy-vinegar dip.</p>
-                <span class="price">$20.49</span>
-                <a href="#" class="add-to-order">Add to Order <i class="fas fa-arrow-right"></i></a>
+                <div class="menu-item-body">
+                    <h4>Crispy Pata <span class="badge popular">Popular</span></h4>
+                    <p>Deep-fried pig trotters or knuckles served with a soy-vinegar dip.</p>
+                    <span class="price">$20.49</span>
+                    <a href="#" class="add-to-order">Add to Order <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
             <div class="menu-item">
                 <div class="menu-img-wrap"><img src="img/KareKare.jpg" alt="Kare-Kare"></div>
-                <h4>Kare-Kare</h4>
-                <p>Traditional Filipino stew complimented with a thick savory peanut sauce.</p>
-                <span class="price">$21.99</span>
-                <a href="#" class="add-to-order">Add to Order <i class="fas fa-arrow-right"></i></a>
+                <div class="menu-item-body">
+                    <h4>Kare-Kare</h4>
+                    <p>Traditional Filipino stew complimented with a thick savory peanut sauce.</p>
+                    <span class="price">$21.99</span>
+                    <a href="#" class="add-to-order">Add to Order <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
             <div class="menu-item">
                 <div class="menu-img-wrap"><img src="img/DiniguanMarie.jpg" alt="Dinuguan"></div>
-                <h4>Dinuguan</h4>
-                <p>Rich and savory pork blood stew with garlic, chilis, and vinegar.</p>
-                <span class="price">$12.99</span>
-                <a href="#" class="add-to-order">Add to Order <i class="fas fa-arrow-right"></i></a>
+                <div class="menu-item-body">
+                    <h4>Dinuguan</h4>
+                    <p>Rich and savory pork blood stew with garlic, chilis, and vinegar.</p>
+                    <span class="price">$12.99</span>
+                    <a href="#" class="add-to-order">Add to Order <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
             <div class="menu-item">
                 <div class="menu-img-wrap"><img src="img/BangusSisig.jpg" alt="Bangus Sisig"></div>
-                <h4>Bangus Sisig</h4>
-                <p>Sizzling flakes of milkfish mixed with onions, peppers, and calamansi.</p>
-                <span class="price">$18.75</span>
-                <a href="#" class="add-to-order">Add to Order <i class="fas fa-arrow-right"></i></a>
+                <div class="menu-item-body">
+                    <h4>Bangus Sisig</h4>
+                    <p>Sizzling flakes of milkfish mixed with onions, peppers, and calamansi.</p>
+                    <span class="price">$18.75</span>
+                    <a href="#" class="add-to-order">Add to Order <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
             <div class="menu-item">
                 <div class="menu-img-wrap"><img src="img/SavoryChicken.jpg" alt="Savory Fried Chicken"></div>
-                <h4>Savory Fried Chicken</h4>
-                <p>Classic Filipino-style savory fried chicken, crispy on the outside and juicy on the inside.</p>
-                <span class="price">$13.75</span>
-                <a href="#" class="add-to-order">Add to Order <i class="fas fa-arrow-right"></i></a>
+                <div class="menu-item-body">
+                    <h4>Savory Fried Chicken</h4>
+                    <p>Classic Filipino-style savory fried chicken, crispy on the outside and juicy on the inside.</p>
+                    <span class="price">$13.75</span>
+                    <a href="#" class="add-to-order">Add to Order <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
             <div class="menu-item">
                 <div class="menu-img-wrap"><img src="img/Dilisilog.jpg" alt="Dilisilog"></div>
-                <h4>Dilisilog</h4>
-                <p>Crispy fried anchovies served with garlic rice and a fried egg.</p>
-                <span class="price">$12.99</span>
-                <a href="#" class="add-to-order">Add to Order <i class="fas fa-arrow-right"></i></a>
+                <div class="menu-item-body">
+                    <h4>Dilisilog</h4>
+                    <p>Crispy fried anchovies served with garlic rice and a fried egg.</p>
+                    <span class="price">$12.99</span>
+                    <a href="#" class="add-to-order">Add to Order <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
         </div>
     </section>
@@ -239,75 +283,169 @@
         <h3>Rice &amp; Sides</h3>
         <div class="menu-grid">
             <div class="menu-item">
-                <h4>Garlic Rice</h4>
-                <p>Fragrant jasmine rice saut&eacute;ed with garlic and topped with fried garlic bits.</p>
-                <span class="price">$2.99</span>
-                <a href="#" class="add-to-order">Add to Order <i class="fas fa-arrow-right"></i></a>
+                <div class="menu-item-body">
+                    <h4>Garlic Rice</h4>
+                    <p>Fragrant jasmine rice saut&eacute;ed with garlic and topped with fried garlic bits.</p>
+                    <span class="price">$2.99</span>
+                    <a href="#" class="add-to-order">Add to Order <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
             <div class="menu-item">
-                <h4>Pancit Bihon</h4>
-                <p>Rice vermicelli noodles with vegetables and choice of protein.</p>
-                <span class="price">$13.75</span>
-                <a href="#" class="add-to-order">Add to Order <i class="fas fa-arrow-right"></i></a>
+                <div class="menu-item-body">
+                    <h4>Pancit Bihon</h4>
+                    <p>Rice vermicelli noodles with vegetables and choice of protein.</p>
+                    <span class="price">$13.75</span>
+                    <a href="#" class="add-to-order">Add to Order <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
         </div>
-        <div class="family-feast-banner">
-            <h3>Can't decide? Try our Family Feast!</h3>
-            <p>A perfect combination of our most popular dishes, ideal for sharing with family and friends.</p>
-            <div class="family-feast-details">
-                <span class="price">$49.99</span>
-                <span>(Serves 4-6)</span>
-                <!-- Replace href="#" with your online ordering link -->
-                <a href="#" class="btn btn-primary">Order Family Feast</a>
+    </section>
+
+    <!-- ═══════════════════ PATTERN DIVIDER ═══════════════════ -->
+    <div class="pattern-divider"></div>
+
+    <!-- ═══════════════════ OUR STORY ═══════════════════ -->
+    <section id="story" class="story-section">
+        <span class="section-label">Our Story</span>
+        <h2>A Family Legacy Since 1995</h2>
+        <div class="pattern-divider-thin"></div>
+
+        <div class="story-grid">
+            <div class="story-text">
+                <p>What started as a simple dream to bring the tastes of home to the Filipino community in Southern
+                    California has grown into a beloved neighborhood restaurant.</p>
+
+                <div class="story-highlight">
+                    "Every dish we serve carries the spirit of our family kitchen back in the Philippines &mdash;
+                    cooked with the same love, the same recipes, the same heart."
+                </div>
+
+                <p>For nearly three decades, Maria's Kusina has been a gathering place for families, a taste of home
+                    for homesick Filipinos, and a gateway to authentic Filipino cuisine for adventurous food lovers
+                    across LA and Orange County.</p>
+
+                <p>From our signature Crispy Pata to our beloved Lumpia Shanghai, every dish is prepared fresh daily
+                    using time-honored recipes and the finest ingredients.</p>
+
+                <div class="story-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="30">30+</span>
+                        <span class="stat-label">Years of Tradition</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Made with Love</span>
+                    </div>
+                </div>
+            </div>
+            <div class="story-image-wrap">
+                <img src="img/lechon.jpg" alt="Maria's Kusina — Filipino family cooking traditions">
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ TESTIMONIALS ═══════════════════ -->
+    <section class="testimonials-section">
+        <span class="section-label">What People Say</span>
+        <h2>Loved by Our <em>Community</em></h2>
+        <p class="subtitle">Don't just take our word for it &mdash; hear from the families, foodies, and friends who
+            keep coming back.</p>
+
+        <div class="testimonials-track-wrapper">
+            <div class="testimonials-track">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The Crispy Pata here is UNREAL. Perfectly crispy skin, tender meat &mdash; exactly how my lola used to make it. This place is a gem in Buena Park!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">J</div>
+                        <div>
+                            <strong>Jason R.</strong>
+                            <span>Cerritos, CA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"I'm not Filipino but my coworker brought me here and I'm obsessed. The Kare-Kare and Lumpia Shanghai are now my comfort food. So flavorful!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">S</div>
+                        <div>
+                            <strong>Sarah M.</strong>
+                            <span>Fullerton, CA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"We order catering from Maria's Kusina for every family reunion. The food is always fresh, generous portions, and it disappears in minutes. The best!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">M</div>
+                        <div>
+                            <strong>Miguel D.</strong>
+                            <span>Anaheim, CA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Finally, a place that tastes like real Filipino home cooking! The Sisig is sizzling hot and the Dinuguan is rich and authentic. 10/10 will keep coming back."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">A</div>
+                        <div>
+                            <strong>Angela T.</strong>
+                            <span>Long Beach, CA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Brought my non-Filipino boyfriend here for his first time trying Filipino food and he said it was the best meal he's had all year. Maria's never disappoints!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">K</div>
+                        <div>
+                            <strong>Karen L.</strong>
+                            <span>Irvine, CA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The Family Feast is an incredible deal. Fed our whole family of 6 and we still had leftovers. Everything was delicious, especially the Lechon Kawali!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">R</div>
+                        <div>
+                            <strong>Robert C.</strong>
+                            <span>Buena Park, CA</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
 
-    <!-- =======================================================
-         CATERING SECTION
-         Fill in your catering packages and pricing.
-         ======================================================= -->
-    <section id="catering" class="catering-section">
-        <h2>Catering Services</h2>
-        <p class="subtitle">Bring authentic Filipino flavors to your next event &mdash; from intimate gatherings to
-            large celebrations.</p>
-        <div class="menu-grid catering-grid">
-            <!-- Add / edit catering packages below -->
-            <div class="menu-item">
-                <h4>Small Gatherings</h4>
-                <p><!-- Details for small events (up to ~20 guests): what's included, price range, etc. --></p>
-            </div>
-            <div class="menu-item">
-                <h4>Corporate &amp; Office Events</h4>
-                <p><!-- Details for corporate or office catering --></p>
-            </div>
-            <div class="menu-item">
-                <h4>Large Celebrations</h4>
-                <p><!-- Weddings, quincea&ntilde;eras, large parties --></p>
-            </div>
-        </div>
-        <div class="cta-banner">
-            <h3>Ready to book catering for your next event?</h3>
-            <p>Contact us today to discuss your menu, guest count, and event details.</p>
-            <div class="cta-buttons">
-                <a href="tel:7145210108" class="btn btn-primary"><i class="fas fa-phone"></i> (714) 521-0108</a>
-                <!-- Replace href with your real email or a catering inquiry form link -->
-                <a href="mailto:info@mariaskusina.com" class="btn btn-secondary"><i class="fas fa-envelope"></i> Email
-                    Us</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- =======================================================
-         CONTACT SECTION
-         Replace the Google Maps iframe src with a real embed URL.
-         Go to maps.google.com â†’ search your address â†’
-         Share â†’ Embed a map â†’ copy the src URL.
-         ======================================================= -->
+    <!-- ═══════════════════ CONTACT ═══════════════════ -->
     <section id="contact" class="contact-section">
+        <span class="section-label">Visit Us</span>
         <h2>Find Us</h2>
-        <p class="subtitle">We&rsquo;re in Buena Park, CA &mdash; come visit us!</p>
+        <p class="subtitle">We&rsquo;re in Buena Park, CA &mdash; come visit and taste the difference!</p>
         <div class="contact-grid">
             <div class="contact-info-block">
                 <i class="fas fa-map-marker-alt contact-icon"></i>
@@ -327,11 +465,9 @@
             <div class="contact-info-block">
                 <i class="fas fa-envelope contact-icon"></i>
                 <h3>Email</h3>
-                <!-- Replace with your real email address -->
-                <p><a href="mailto:info@mariaskusina.com">info@mariaskusina.com</a></p>
+                <p><a href="mailto:Mariakusinabp@gmail.com">Mariakusinabp@gmail.com</a></p>
             </div>
         </div>
-        <!-- Replace the iframe src below with your real Google Maps embed URL -->
         <div class="map-container">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.0!2d-118.003!3d33.866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s6901+La+Palma+Ave%2C+Buena+Park%2C+CA+90620!5e0!3m2!1sen!2sus!4v0000000000000"
@@ -341,37 +477,35 @@
         </div>
     </section>
 
+    <!-- ═══════════════════ FOOTER ═══════════════════ -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-col about">
                 <h4>Maria's Kusina</h4>
-                <p>Bringing the heart of the Philippines to Los Angeles since 1995. Experience authentic flavors made
-                    with love and tradition.</p>
+                <p>Bringing the heart of the Philippines to Southern California since 1995. Experience authentic flavors
+                    made with love and tradition.</p>
                 <div class="social-icons">
-                    <!-- Replace href="#" with your real social media profile URLs -->
                     <a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Follow us on TikTok"><i class="fab fa-tiktok"></i></a>
                 </div>
             </div>
             <div class="footer-col contact">
-                <h4>Contact Us</h4>
+                <h4>Contact</h4>
                 <p><i class="fas fa-map-marker-alt"></i> 6901 La Palma Ave, Buena Park, CA 90620</p>
                 <p><i class="fas fa-phone"></i> <a href="tel:7145210108">(714) 521-0108</a></p>
-                <!-- Replace with your real email address -->
-                <p><i class="fas fa-envelope"></i> <a href="mailto:info@mariaskusina.com">info@mariaskusina.com</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:Mariakusinabp@gmail.com">Mariakusinabp@gmail.com</a></p>
             </div>
             <div class="footer-col hours">
                 <h4>Hours</h4>
-                <p>Monday &ndash; Sunday: 11AM &ndash; 7:30PM</p>
+                <p>Monday &ndash; Sunday<br>11:00 AM &ndash; 7:30 PM</p>
             </div>
             <div class="footer-col links">
                 <h4>Quick Links</h4>
                 <ul>
+                    <li><a href="#story">Our Story</a></li>
                     <li><a href="#menu">View Menu</a></li>
-                    <li><a href="#catering">Catering Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <!-- Replace href="#" with your real online ordering URL -->
-                    <li><a href="#">Online Ordering</a></li>
+                    <li><a href="#contact">Find Us</a></li>
                 </ul>
             </div>
         </div>
